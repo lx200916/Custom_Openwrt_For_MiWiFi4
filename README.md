@@ -1,9 +1,9 @@
-## An Customed Openwrt System For XiaoMi Router 4.##
+## An Customed Openwrt System For XiaoMi Router 4. ##
  
  Memory Config&Wan/Lan Config is Preinstall.
  Default Theme is Rosy.Great Thanks To [RosyWrt](https://github.com/rosywrt/luci-theme-rosy).
  Some Packages From Lean added. Thanks To [Lede](https://github.com/coolsnowwolf/lede).
- ## Openwrt##
+ ## Openwrt ##
 
 
 
