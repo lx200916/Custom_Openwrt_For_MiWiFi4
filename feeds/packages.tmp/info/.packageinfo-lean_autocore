@@ -1,0 +1,20 @@
+Source-Makefile: feeds/packages/lean/autocore/Makefile
+
+Package: autocore
+Version: 1-18
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86 +bc +lm-sensors +ethtool
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Repository: base
+Title: x86/x64 auto core loadbalance script.
+Maintainer: Lean
+Source: 
+Type: ipkg
+Description: A usb autoconfig hotplug script.
+Lean
+@@
+
+

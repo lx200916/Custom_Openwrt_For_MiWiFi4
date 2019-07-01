@@ -1,0 +1,21 @@
+Source-Makefile: feeds/packages/lean/v2ray/Makefile
+
+Package: v2ray
+Version: v4.19-3
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ca-certificates
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: V2Ray is a cross-platform proxy software
+Maintainer: 
+Source: 
+Type: ipkg
+Description: V2Ray is a cross-platform proxy software
+https://github.com/v2ray/v2ray-core
+
+@@
+
+

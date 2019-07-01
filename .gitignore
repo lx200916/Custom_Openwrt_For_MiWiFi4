@@ -10,9 +10,9 @@
 /staging_dir
 /tmp
 /logs
-/feeds
+!/feeds/packages/lean
 /feeds.conf
-/files
+/feeds
 /overlay
 /package/feeds
 /package/openwrt-packages

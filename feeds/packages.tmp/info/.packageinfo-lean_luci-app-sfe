@@ -1,0 +1,41 @@
+Source-Makefile: feeds/packages/lean/luci-app-sfe/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host 
+
+Package: luci-app-sfe
+Submenu: 3. Applications
+Version: 1.0-12
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fast-classifier +pdnsd-alt +kmod-tcp-bbr @LINUX_4_9
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for Turbo ACC (SFE)
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for Turbo ACC (SFE)
+
+@@
+
+Package: luci-i18n-sfe-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-12
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-sfe
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-sfe - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-sfe - 中文 (Chinese)
+
+@@
+
+

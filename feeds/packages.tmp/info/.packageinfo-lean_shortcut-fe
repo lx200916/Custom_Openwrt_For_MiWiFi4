@@ -1,0 +1,58 @@
+Source-Makefile: feeds/packages/lean/shortcut-fe/Makefile
+
+Package: kmod-shortcut-fe
+Submenu: Network Support
+Version: <LINUX_VERSION>-5
+Depends: @IPV6 @LINUX_4_9
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Kernel driver for SFE
+Maintainer: 
+Source: 
+Type: ipkg
+Kernel-Config: CONFIG_NF_CONNTRACK_EVENTS=y CONFIG_SHORTCUT_FE=y
+Description: Kernel driver for SFE
+
+@@
+
+Package: kmod-shortcut-fe-cm
+Submenu: Network Support
+Version: <LINUX_VERSION>-5
+Depends: +kmod-ipt-conntrack +kmod-shortcut-fe
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Kernel driver for SFE
+Maintainer: 
+Source: 
+Type: ipkg
+Kernel-Config: CONFIG_NF_CONNTRACK_CHAIN_EVENTS=y CONFIG_NF_CONNTRACK_MARK=y
+Description: Kernel driver for SFE
+
+@@
+
+Package: kmod-fast-classifier
+Submenu: Network Support
+Version: <LINUX_VERSION>-5
+Depends: +kmod-ipt-conntrack +kmod-shortcut-fe
+Conflicts: 
+Menu-Depends: 
+Provides: shortcut-fe
+Section: kernel
+Category: Kernel modules
+Title: Kernel driver for FAST Classifier
+Maintainer: 
+Source: 
+Type: ipkg
+Kernel-Config: CONFIG_NF_CONNTRACK_CHAIN_EVENTS=y CONFIG_NF_CONNTRACK_MARK=y
+Description: FAST Classifier connection manager for Shortcut forwarding engine. 
+It talks to SFE to make decisions about offloading connections.
+
+@@
+
+

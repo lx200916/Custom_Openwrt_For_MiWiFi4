@@ -1,0 +1,22 @@
+Source-Makefile: feeds/packages/lean/luci-app-dnspod/Makefile
+Build-Types: host
+
+Package: luci-app-dnspod
+Submenu: 3. Applications
+Version: 1.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +libcurl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Auto DNS for dnspod
+Maintainer: 
+Source: 
+Type: ipkg
+Description:    auto get pub ip,dnspod ddns,must include curl with ssl
+
+@@
+
+

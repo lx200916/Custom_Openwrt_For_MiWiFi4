@@ -1,0 +1,174 @@
+Source-Makefile: feeds/packages/lean/qt5/Makefile
+
+Package: qt5-core
+Submenu: Qt5
+Version: 5.8-0
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libstdcpp +libopenssl +zlib @!LINUX_2_6
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: qt5 core
+Maintainer: 
+Source: qt-everywhere-opensource-src-5.8.0.tar.gz
+Type: ipkg
+Description: qt5 core
+http://qt-project.org
+
+@@
+
+Package: qt5-concurrent
+Submenu: Qt5
+Version: 5.8-0
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libstdcpp +libopenssl +zlib @!LINUX_2_6 +qt5-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: qt5 concurrent
+Maintainer: 
+Source: qt-everywhere-opensource-src-5.8.0.tar.gz
+Type: ipkg
+Description: qt5 concurrent
+http://qt-project.org
+
+@@
+
+Package: qt5-network
+Submenu: Qt5
+Version: 5.8-0
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libstdcpp +libopenssl +zlib @!LINUX_2_6 +qt5-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: qt5 network
+Maintainer: 
+Source: qt-everywhere-opensource-src-5.8.0.tar.gz
+Type: ipkg
+Description: qt5 network
+http://qt-project.org
+
+@@
+
+Package: qt5-widgets
+Submenu: Qt5
+Version: 5.8-0
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libstdcpp +libopenssl +zlib @!LINUX_2_6 +qt5-core +qt5-network
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: qt5 widgets
+Maintainer: 
+Source: qt-everywhere-opensource-src-5.8.0.tar.gz
+Type: ipkg
+Description: qt5 widgets
+http://qt-project.org
+
+@@
+
+Package: qt5-sql
+Submenu: Qt5
+Version: 5.8-0
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libstdcpp +libopenssl +zlib @!LINUX_2_6 +qt5-core +libmariadbclient
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: qt5 sql
+Maintainer: 
+Source: qt-everywhere-opensource-src-5.8.0.tar.gz
+Type: ipkg
+Description: qt5 sql
+http://qt-project.org
+
+@@
+
+Package: qt5-xml
+Submenu: Qt5
+Version: 5.8-0
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libstdcpp +libopenssl +zlib @!LINUX_2_6 +qt5-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: qt5 xml
+Maintainer: 
+Source: qt-everywhere-opensource-src-5.8.0.tar.gz
+Type: ipkg
+Description: qt5 xml
+http://qt-project.org
+
+@@
+
+Package: qt5-serialport
+Submenu: Qt5
+Version: 5.8-0
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libstdcpp +libopenssl +zlib @!LINUX_2_6 +qt5-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: qt5 serialport
+Maintainer: 
+Source: qt-everywhere-opensource-src-5.8.0.tar.gz
+Type: ipkg
+Description: qt5 serialport
+http://qt-project.org
+
+@@
+
+Package: qt5-xmlpatterns
+Submenu: Qt5
+Version: 5.8-0
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libstdcpp +libopenssl +zlib @!LINUX_2_6 +qt5-core +qt5-network
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: qt5 xmlpatterns
+Maintainer: 
+Source: qt-everywhere-opensource-src-5.8.0.tar.gz
+Type: ipkg
+Description: qt5 xmlpatterns
+http://qt-project.org
+
+@@
+
+Package: qt5-test
+Submenu: Qt5
+Version: 5.8-0
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libstdcpp +libopenssl +zlib @!LINUX_2_6 +qt5-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: qt5 test
+Maintainer: 
+Source: qt-everywhere-opensource-src-5.8.0.tar.gz
+Type: ipkg
+Description: qt5 test
+http://qt-project.org
+
+@@
+
+

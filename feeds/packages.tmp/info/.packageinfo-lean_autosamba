@@ -1,0 +1,20 @@
+Source-Makefile: feeds/packages/lean/autosamba/Makefile
+
+Package: autosamba
+Version: 1-9
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-app-samba
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Repository: base
+Title: Samba autoconfig hotplug script.
+Maintainer: Lean
+Source: 
+Type: ipkg
+Description: A hotplug script to config Samba share automatically.
+Lean
+@@
+
+

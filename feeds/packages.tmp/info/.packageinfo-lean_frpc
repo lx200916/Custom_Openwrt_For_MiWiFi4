@@ -1,0 +1,22 @@
+Source-Makefile: feeds/packages/lean/frpc/Makefile
+
+Package: frpc
+Version: 0.27.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: FRPC Client
+Maintainer: 
+Source: frp_0.27.0_linux_.tar.gz
+License: Apache-2.0
+Type: ipkg
+Description: frp is a fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet
+https://github.com/fatedier/frp/releases
+
+@@
+
+

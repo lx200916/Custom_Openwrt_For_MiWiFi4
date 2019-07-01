@@ -1,0 +1,22 @@
+Source-Makefile: feeds/packages/lean/luci-theme-netgear/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host 
+
+Package: luci-theme-netgear
+Submenu: 4. Themes
+Version: x-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Netgear Theme
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Netgear Theme
+
+@@
+
+

@@ -1,0 +1,22 @@
+Source-Makefile: feeds/packages/lean/luci-app-unblockmusic/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host 
+
+Package: luci-app-unblockmusic
+Submenu: 3. Applications
+Version: 1-36
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for Unblock NeteaseCloudMusic
+Maintainer: <https://github.com/maxlicheng/luci-app-unblockmusic>
+Source: 
+Type: ipkg
+Description: LuCI support for Unblock NeteaseCloudMusic
+<https://github.com/maxlicheng/luci-app-unblockmusic>
+@@
+
+

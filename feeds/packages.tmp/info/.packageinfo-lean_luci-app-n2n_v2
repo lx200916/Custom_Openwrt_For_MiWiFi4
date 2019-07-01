@@ -1,0 +1,41 @@
+Source-Makefile: feeds/packages/lean/luci-app-n2n_v2/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host 
+
+Package: luci-app-n2n_v2
+Submenu: 3. Applications
+Version: 1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +n2n_v2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: n2n_v2 VPN Configuration module
+Maintainer: 
+Source: 
+Type: ipkg
+Description: n2n_v2 VPN Configuration module
+
+@@
+
+Package: luci-i18n-n2n_v2-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-n2n_v2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-n2n_v2 - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-n2n_v2 - 中文 (Chinese)
+
+@@
+
+

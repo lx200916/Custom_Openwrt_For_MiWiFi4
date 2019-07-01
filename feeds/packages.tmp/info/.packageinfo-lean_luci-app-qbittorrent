@@ -1,0 +1,39 @@
+Source-Makefile: feeds/packages/lean/luci-app-qbittorrent/Makefile
+
+Package: luci-app-qbittorrent
+Submenu: 3. Applications
+Version: 1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +qBittorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: qbittorrent-nox for LuCI
+Maintainer: 
+Source: 
+Type: ipkg
+Description:     This package contains LuCI configuration pages for qbittorrent-nox
+
+@@
+
+Package: luci-i18n-qbittorrent-zh-cn
+Submenu: 3. Applications
+Version: 1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-app-qbittorrent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: qbittorrent-nox for LuCI
+Maintainer: 
+Source: 
+Type: ipkg
+Description:     Translation support for luci-app-qbittorrent - 简体中文 (Simplified Chinese)
+
+@@
+
+

@@ -1,0 +1,42 @@
+Source-Makefile: feeds/packages/admin/luci-app-ssr-plus/Makefile
+
+Package: luci-app-ssr-plus
+Submenu: 3. Applications
+Version: 1-96
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +shadowsocksr-libev-alt +ipset +ip-full +iptables-mod-tproxy +dnsmasq-full +coreutils +coreutils-base64 +bash +pdnsd-alt +wget +PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks:shadowsocks-libev-ss-redir +PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray:v2ray +PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun:kcptun-client +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server:shadowsocksr-libev-server +PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks:shadowsocksr-libev-ssr-local
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: SS/SSR/V2Ray LuCI interface
+Maintainer: 
+Source: 
+Type: ipkg
+Description: SS/SSR/V2Ray LuCI interface
+
+@@
+Config:
+config PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks
+	bool "Include Shadowsocks New Version"
+	default n
+	
+config PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray
+	bool "Include V2ray"
+	default n
+	
+config PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun
+	bool "Include Kcptun"
+	default n
+	
+config PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server
+	bool "Include ShadowsocksR Server"
+	default n
+	
+config PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks
+	bool "Include ShadowsocksR Socks and Tunnel"
+	default n
+@@
+
+

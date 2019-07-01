@@ -1,0 +1,22 @@
+Source-Makefile: feeds/packages/lean/dnsforwarder/Makefile
+
+Package: dnsforwarder
+Version: 6.1.15-10
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +wget +dnsmasq-full +libpthread +coreutils-base64
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A simple DNS forwarder
+Maintainer: Dennis <openwrt@tossp.com>
+Source: dnsforwarder-6.1.15.tar.gz
+License: GPL-3.0
+Type: ipkg
+Description: Forwarding queries to customized domains (and their subdomains) to specified servers over a specified protocol (UDP or TCP). non-standard ports are supported.
+https://github.com/holmium/dnsforwarder
+Dennis <openwrt@tossp.com>
+@@
+
+

@@ -1,0 +1,21 @@
+Source-Makefile: feeds/packages/lean/luci-app-haproxy-tcp/Makefile
+
+Package: luci-app-haproxy-tcp
+Submenu: Luci
+Version: 1.4-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +haproxy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Utilities
+Repository: base
+Title: luci for haproxy and shadowsocks
+Maintainer: Alex Zhuo <1886090@gmail.com>
+Source: 
+Type: ipkg
+Description:     A luci app for haproxy with shadowsocks
+Alex Zhuo <1886090@gmail.com>
+@@
+
+

@@ -1,0 +1,21 @@
+Source-Makefile: feeds/packages/lean/coremark/Makefile
+
+Package: coremark
+Version: 2019-01-31-2e9d6165f362f7071d29b7f88c6d32655e5d4a3c-12
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: CoreMark Embedded Microprocessor Benchmark
+Maintainer: 
+Source: coremark-2019-01-31-2e9d6165f362f7071d29b7f88c6d32655e5d4a3c.tar.xz
+Type: ipkg
+Description:   Embedded Microprocessor Benchmark
+https://github.com/eembc/coremark
+
+@@
+
+

@@ -1,0 +1,22 @@
+Source-Makefile: feeds/packages/lean/luci-app-frpc/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host 
+
+Package: luci-app-frpc
+Submenu: 3. Applications
+Version: 1.1-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +wget +frpc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI for FRPC
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI for FRPC
+
+@@
+
+

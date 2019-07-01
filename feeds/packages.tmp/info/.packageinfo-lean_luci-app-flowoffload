@@ -1,0 +1,41 @@
+Source-Makefile: feeds/packages/lean/luci-app-flowoffload/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host 
+
+Package: luci-app-flowoffload
+Submenu: 3. Applications
+Version: 1.0-13
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-ipt-offload +pdnsd-alt +kmod-tcp-bbr @!LINUX_3_18 @!LINUX_4_9
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for Flow Offload
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for Flow Offload
+
+@@
+
+Package: luci-i18n-flowoffload-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-13
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-flowoffload
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-flowoffload - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-flowoffload - 中文 (Chinese)
+
+@@
+
+

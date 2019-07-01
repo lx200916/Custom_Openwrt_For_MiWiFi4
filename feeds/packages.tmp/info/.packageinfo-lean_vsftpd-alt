@@ -1,0 +1,33 @@
+Source-Makefile: feeds/packages/lean/vsftpd-alt/Makefile
+
+Package: vsftpd-alt
+Submenu: File Transfer
+Version: 3.0.3-6
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libuci
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A fast and secure FTP server (with aio support)
+Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
+Source: vsftpd-3.0.3.tar.gz
+License: GPLv2
+Type: ipkg
+Description: A fast and secure FTP server (with aio support)
+http://vsftpd.beasts.org/
+Cezary Jackiewicz <cezary@eko.one.pl>
+@@
+Config:
+config VSFTPD_USE_UCI_SCRIPTS
+	bool "Uses UCI scripts"
+	depends on PACKAGE_vsftpd-alt
+	default y
+#config VSFTPD_ENABLE_AIO
+#	bool "Enable async I/O (Currently Buggy)"
+#	depends on PACKAGE_vsftpd-alt
+#	default n
+@@
+
+

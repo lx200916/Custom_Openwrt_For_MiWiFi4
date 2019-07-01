@@ -1,0 +1,21 @@
+Source-Makefile: feeds/packages/lean/kcptun/Makefile
+
+Package: kcptun-client
+Version: 20190515-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Kcptun is a cross-platform proxy software
+Maintainer: 
+Source: kcptun-linux--20190515.tar.gz
+Type: ipkg
+Description:   Kcptun is a Fast and Reliable ARQ Protocol tunnel
+https://github.com/xtaci/kcptun
+
+@@
+
+

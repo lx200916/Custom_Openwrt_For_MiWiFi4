@@ -188,7 +188,7 @@ static void __init tl_ap123_setup(void)
 
 	ath79_register_m25p80(&tl_wr841n_v8_flash_data);
 
-	ath79_setup_ar934x_eth_cfg(AR934X_ETH_CFG_SW_PHY_SWAP);
+	ath79_setup_ar934x_eth_cfg(AR934X_ETH_CFG_SW_ONLY_MODE);
 
 	ath79_register_mdio(1, 0x0);
 
@@ -197,9 +197,9 @@ static void __init tl_ap123_setup(void)
 
 	/* GMAC0 is connected to the PHY0 of the internal switch */
 	ath79_switch_data.phy4_mii_en = 1;
-	ath79_switch_data.phy_poll_mask = BIT(0);
+	ath79_switch_data.phy_poll_mask = BIT(4);
 	ath79_eth0_data.phy_if_mode = PHY_INTERFACE_MODE_MII;
-	ath79_eth0_data.phy_mask = BIT(0);
+	ath79_eth0_data.phy_mask = BIT(4);
 	ath79_eth0_data.mii_bus_dev = &ath79_mdio1_device.dev;
 	ath79_register_eth(0);
 
@@ -237,11 +237,7 @@ static void __init tl_wr842n_v2_setup(void)
 					ARRAY_SIZE(tl_wr841n_v8_gpio_keys),
 					tl_wr841n_v8_gpio_keys);
 
-	gpio_request_one(TL_MR3420V2_GPIO_USB_POWER,
-			 GPIOF_OUT_INIT_HIGH | GPIOF_EXPORT_DIR_FIXED,
-			 "USB power");
 
-	ath79_register_usb();
 }
 
 MIPS_MACHINE(ATH79_MACH_TL_WR842N_V2, "TL-WR842N-v2", "TP-LINK TL-WR842N/ND v2",
