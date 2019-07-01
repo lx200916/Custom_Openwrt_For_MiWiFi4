@@ -12,9 +12,9 @@
 /logs
 !/feeds/packages/lean
 /feeds.conf
-/feeds
+/feeds/*
 /overlay
-/package/feeds
+/package/feeds/*
 /package/openwrt-packages
 key-build*
 *.orig
@@ -27,3 +27,6 @@ TAGS*~
 git-src
 .project
 .cproject
+README.md
+README
+README
